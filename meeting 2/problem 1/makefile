@@ -1,11 +1,9 @@
 all:
-	g++ -o Payslip_Employee Payslip_Employee.cpp
-
+	g++ -o salary_calculation salary_calculation.cpp
 dump:
-	objdump -d Payslip_Employee > Payslip_Employee.asm
+	objdump -d salary_calculation > salary_calculation.asm
 
 clean:
-	rm -f Payslip_Employee.o Payslip_Employee
-
-run: Payslip_Employee
-	./Payslip_Employee
+	rm -f salary_calculation.o salary_calculation
+run: salary_calculation
+	./salary_calculation
