@@ -1,9 +1,11 @@
-salary_caluclation: salary_calulation.o
-                g++ salary_calculation.o -o salary_calculation
-salary_calculation.o: salary_calculation.cpp
-                g++ salary_calculation.cpp -o salary_calculation.o
-run: salary_calculation
-    ./salary_calculation
+all:
+	g++ -o salary_calculation salary_calculation.cpp
+
+dump:
+	objdump -d salary_calculation > salary_calculation.asm
 
 clean:
-    rm -f salary_calculation.o salary_calculation
+	rm -f salary_calcualtion.o salary_calculation
+
+run: salary_calculation
+	./salary_calculation
