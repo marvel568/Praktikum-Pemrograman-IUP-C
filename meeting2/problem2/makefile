@@ -1,11 +1,11 @@
 all:
-	g++ -o salary_calculation salary_calculation.cpp
+	g++ -o quadequationd quadequationd.cpp
 
 dump:
-	objdump -d salary_calculation > salary_calculation.asm
+	objdump -d squadequationd > quadequationd.asm
 
 clean:
-	rm -f salary_calcualtion.o salary_calculation
+	rm -f quadequationd.o quadequationd
 
-run: salary_calculation
-	./salary_calculation
+run: quadequationd
+	./quadequationd
