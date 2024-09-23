@@ -12,6 +12,11 @@ int main() {
     installment = 2000;
     insurance = 1000;
 
+    cout << "Name: " << name << endl;
+    cout << "Gross Salary: " << grosssalary << endl;
+    cout << "Installment: " << installment << endl;
+    cout << "Insurance: " << insurance << endl;
+
 
     return 0;
 }
