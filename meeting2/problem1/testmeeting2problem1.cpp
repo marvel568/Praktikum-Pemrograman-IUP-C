@@ -1,22 +1,12 @@
-#include <iostream>
-#include <string>  
+#include <tuple>
+#include <string>
 using namespace std;
 
-int main() {
-    string name;  
-    double grosssalary, installment, insurance;
+tuple<string, double, double, double> getTestValues() {
+    string name = "marvel";  
+    double grosssalary = 10000;  
+    double installment = 2000;   
+    double insurance = 1000;     
 
-   
-    name = "Marvel";  
-    grosssalary = 10000;  
-    installment = 2000;
-    insurance = 1000;
-
-    cout << "Name: " << name << endl;
-    cout << "Gross Salary: " << grosssalary << endl;
-    cout << "Installment: " << installment << endl;
-    cout << "Insurance: " << insurance << endl;
-
-
-    return 0;
+    return make_tuple(name, grosssalary, installment, insurance);
 }
