@@ -1,10 +1,7 @@
-all: salary_calculation testfile
+all: salary_calculation
 
 salary_calculation:
-	g++ -o salary_calculation salary_calculation.cpp
-
-testfile:
-	g++ -o testmeeting2problem1 testmeeting2problem1.cpp
+	g++ -o salary_calculation salary_calculation.cpp testfile.cpp
 
 dump:
 	objdump -d salary_calculation > salary_calculation.asm
@@ -14,6 +11,3 @@ clean:
 
 run_salary: salary_calculation
 	./salary_calculation
-
-run_test: testmeeting2problem1
-	./testmeeting2problem1
