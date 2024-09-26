@@ -1,13 +1,13 @@
-all: quadequationd
+all: quadequationrealorfake
 
-quadequationd: quadequationd.cpp
-	g++ -o quadequationd quadequationd.cpp
+quadequationd: quadequationrealorfake.cpp
+	g++ -o quadequationrealorfake quadequationrealorfake.cpp
 
 dump:
-	objdump -d quadequationd > quadequationd.asm
+	objdump -d quadequationrealorfake > quadequationrealorfake.asm
 
 clean:
-	rm -f quadequationd quadequationd.asm
+	rm -f quadequationrealorfake quadequationrealorfake.asm
 
-run: quadequationd
-	./quadequationd
+run: quadequationrealorfake
+	./quadequationrealorfake
