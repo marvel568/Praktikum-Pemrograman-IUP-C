@@ -1,4 +1,4 @@
-ll:
+all:
 	g++ -o quadequationd quadequationd.cpp
 
 dump:
