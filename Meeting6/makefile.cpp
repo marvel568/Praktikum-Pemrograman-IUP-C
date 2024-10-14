@@ -1,4 +1,4 @@
-ll:
+all:
 	g++ -o task6 task6.cpp
 
 dump:
