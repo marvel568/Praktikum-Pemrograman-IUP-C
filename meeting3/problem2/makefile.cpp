@@ -1,11 +1,11 @@
 all:
-	g++ -o quadequationd quadequationd.cpp
+	g++ -o biggestofthethree biggestofthethree.cpp
 
 dump:
-	objdump -d quadequationd > quadequationd.asm
+	objdump -d biggestofthethree > biggestofthethree.asm
 
 clean:
-	rm -f quadequationd quadequationd.asm
+	rm -f biggestofthethree biggestofthethree.asm
 
 run: quadequationd
-	./quadequationd
+	./biggestofthethree
