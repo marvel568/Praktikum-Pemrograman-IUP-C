@@ -1,11 +1,11 @@
 all:
-	g++ -o task6 task6.cpp
+	g++ -o factorial factorial.cpp
 
 dump:
-	objdump -d task6 > task6.asm
+	objdump -d factorial > factorial.asm
 
 clean:
-	rm -f task6 task6.asm
+	rm -f factorial factorial.asm
 
-run: task6
-	./task6
+run: factorial
+	./factorial
