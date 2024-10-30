@@ -1,11 +1,11 @@
 all:
-	g++ -o task6 task6.cpp
+	g++ -o functionssub functionssub.cpp
 
 dump:
-	objdump -d task6 > task6.asm
+	objdump -d functionssub > functionssub.asm
 
 clean:
-	rm -f task6 task6.asm
+	rm -f functionssub functionssub.asm
 
-run: task6
-	./task6
+run: functionssub
+	./functionssub
