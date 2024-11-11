@@ -1,11 +1,11 @@
 all:
-	g++ -o quadequationd quadequationd.cpp
+	g++ -o meeting4a meeting4a.cpp
 
 dump:
-	objdump -d quadequationd > quadequationd.asm
+	objdump -d meeting4a > meeting4a.asm
 
 clean:
-	rm -f quadequationd quadequationd.asm
+	rm -f meeting4a meeting4a.asm
 
-run: quadequationd
-	./quadequationd
+run: meeting4a
+	./meeting4a
