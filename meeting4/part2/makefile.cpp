@@ -1,11 +1,11 @@
 all:
-	g++ -o quadequationd quadequationd.cpp
+	g++ -o project4b project4b.cpp
 
 dump:
-	objdump -d quadequationd > quadequationd.asm
+	objdump -d project4b > project4b.asm
 
 clean:
-	rm -f quadequationd quadequationd.asm
+	rm -f project4b project4b.asm
 
-run: quadequationd
-	./quadequationd
+run: project4b
+	./project4b
