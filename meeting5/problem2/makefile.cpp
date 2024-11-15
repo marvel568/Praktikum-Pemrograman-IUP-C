@@ -1,11 +1,11 @@
 all:
-	g++ -o meeting4a meeting4a.cpp
+	g++ -o meeting5b meeting5b.cpp
 
 dump:
-	objdump -d meeting4a > meeting4a.asm
+	objdump -d meeting5b > meeting5b.asm
 
 clean:
-	rm -f meeting4a meeting4a.asm
+	rm -f meeting5b meeting5b.asm
 
-run: meeting4a
-	./meeting4a
+run: meeting5b
+	./meeting5b
