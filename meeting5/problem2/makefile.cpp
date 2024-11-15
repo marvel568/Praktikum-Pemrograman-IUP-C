@@ -1,13 +1,11 @@
-all: salary_calculation
-
-salary_calculation:
-	g++ -o salary_calculation salary_calculation.cpp testmeeting2problem1.cpp
+all:
+	g++ -o meeting4a meeting4a.cpp
 
 dump:
-	objdump -d salary_calculation > salary_calculation.asm
+	objdump -d meeting4a > meeting4a.asm
 
 clean:
-	rm -f salary_calculation.o salary_calculation testmeeting2problem1.o testmeeting2problem1
+	rm -f meeting4a meeting4a.asm
 
-run_salary: salary_calculation
-	./salary_calculation
+run: meeting4a
+	./meeting4a
