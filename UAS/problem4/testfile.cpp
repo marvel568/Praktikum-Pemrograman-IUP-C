@@ -1,33 +1,33 @@
 # Target to compile the object file
-UASno6: UASno6.o
-	g++ UASno61.o -o UASno6.exe
+UASno6: UASno4.o
+	g++ UASno4.o -o UASno4.exe
 
 # Target to compile the C++ program
-UASno6.o: UASno6.cpp
-	g++ -c UASno6.cpp -o UASno6.o
+UASno4.o: UASno4.cpp
+	g++ -c UASno4.cpp -o UASno4.o
 
 # Target to run the program (interactively)
-run: UASno6
-	./UASno6.exe
+run: UASno4
+	./UASno4.exe
 
 # Target to compile the object Test file
-UASno6: UASno6.o
-	g++ UASno6.o -o UASno6.exe
+UASno6: UASno4.o
+	g++ UASno4.o -o UASno4.exe
 
 # Target to compile the C++ Test program
-UASno6.o: UASno6.cpp
-	g++ -c UASno6.cpp -o UASno6.o
+UASno4.o: UASno4.cpp
+	g++ -c UASno4.cpp -o UASno4.o
 
 # Target to run the Test program
-test: UASno6
-	./UASno6.exe
+test: UASno4
+	./UASno4.exe
 
 # Target to clean up compiled files
 clean:
-	rm -f UASno6.o UASno6.o UASno6.exe UASno6.exe
+	rm -f UASno4.o UASno4.o UASno4.exe UASno4.exe
 
 all:
-	g++ -o UASno6 UASno6.cpp
+	g++ -o UASno4 UASno4.cpp
 
 dump:
-	objdump -d UASno6 > UASno6.asm
+	objdump -d UASno4 > UASno4.asm
